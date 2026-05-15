@@ -150,18 +150,6 @@ http://localhost/taskmanagement
 
 ---
 
-## 📸 Demonstração
-
-> Adicione aqui imagens da aplicação ou um GIF demonstrando o fluxo do sistema.
-
-Exemplo:
-
-```md
-![Tela Principal](./assets/dashboard.png)
-```
-
----
-
 ## 📈 Melhorias Futuras
 
 - Implementação de prioridades nas tarefas  
