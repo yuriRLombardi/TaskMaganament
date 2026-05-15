@@ -1,55 +1,180 @@
-# Task Management
+# ✅ Task Management
+> Projeto desenvolvido com fins educacionais, aplicando conceitos de desenvolvimento web full stack e integração com banco de dados.
 
-Projeto simples de gerenciamento de tarefas desenvolvido em PHP com interface web usando Bootstrap.
+Aplicação web de gerenciamento de tarefas desenvolvida em PHP com integração ao banco de dados MySQL. O sistema permite autenticação de usuários, gerenciamento de tarefas e manipulação dinâmica da interface utilizando JavaScript e Bootstrap.
 
-## Visão Geral
+---
 
-Task Management é um sistema para gerenciamento de tarefas pessoais. O usuário faz login e pode criar, editar, excluir e filtrar tarefas conforme o status. A aplicação guarda as tarefas em um banco de dados MySQL e exibe as informações em uma lista interativa.
+## 🎯 Objetivo
 
-## Estrutura do Projeto
+O projeto foi desenvolvido com foco na aplicação de conceitos de desenvolvimento web full stack, incluindo autenticação, operações CRUD, integração com banco de dados e organização de funcionalidades em aplicações web.
 
-- `index.php`: tela de login do usuário.
-- `processaLogin.php`: validação de credenciais e criação de sessão.
-- `tasks.php`: painel principal com listagem de tarefas e modais para adicionar, editar e excluir.
-- `adicaoTarefa.php`: insere nova tarefa no banco de dados.
-- `editarTarefa.php`: atualiza os dados de uma tarefa existente.
-- `excluirTarefa.php`: remove tarefa selecionada do banco.
-- `selecao.php`: seleciona e exibe todas as tarefas do usuário logado.
-- `filtro.php`: retorna tarefas filtradas por status.
-- `script.js`: funções JavaScript para controle de modais e aplicação de filtro.
-- `conexao.php`: conexão PDO com o banco de dados MySQL.
+---
 
-## Tecnologias Usadas
+## ⚙️ Funcionalidades
 
-- PHP
-- MySQL
-- HTML5
-- CSS com Bootstrap 5
-- JavaScript
-- PDO para conexão ao banco de dados e operações no banco de dados
+- Login e autenticação de usuários  
+- Cadastro de novas tarefas  
+- Edição e exclusão de tarefas  
+- Filtragem de tarefas por status  
+- Interface interativa utilizando modais  
+- Integração com banco de dados MySQL  
+- Gerenciamento de sessão de usuário  
 
-## Build e Execução
+---
 
-1. Copie a pasta `taskmanagement` para o diretório do servidor web (Apache, Nginx ou similar).
-2. Ajuste as credenciais de conexão em `conexao.php` se necessário.
-3. Crie o banco de dados MySQL e as tabelas necessárias.
-4. Acesse `index.php` pelo navegador para abrir a tela de login.
+## 🛠️ Tecnologias Utilizadas
 
-## Configuração do Banco de Dados
+- PHP  
+- MySQL  
+- HTML5  
+- CSS3  
+- Bootstrap 5  
+- JavaScript  
+- PDO (PHP Data Objects)  
 
-O projeto utiliza o banco de dados `taskmanagement` configurado em `conexao.php`.
+---
 
-Tabelas esperadas:
+## 🧠 Conceitos Aplicados
 
-- `usuarios`
-- `tarefas`
+- Desenvolvimento web full stack  
+- Operações CRUD  
+- Autenticação e gerenciamento de sessão  
+- Integração com banco de dados relacionais  
+- Manipulação de DOM  
+- Estruturação de interface responsiva  
+- Organização de funcionalidades em aplicações web  
 
-Campos essenciais em `tarefas`:
+---
+## 🔐 Autenticação
 
-- `id` (identificador da tarefa)
-- `usuario_id` (referência ao usuário)
-- `titulo` (nome da tarefa)
-- `descricao` (detalhes da tarefa)
-- `status` (completa / incompleta)
+O sistema utiliza autenticação baseada em sessão para controle de acesso às funcionalidades do usuário autenticado.
+---
+## 📂 Estrutura do Projeto
 
-> Observação: o sistema espera que o login valide o usuário com base nas credenciais da tabela `usuarios`.
+```plaintext
+/taskmanagement
+│
+├── index.php
+├── processaLogin.php
+├── tasks.php
+├── adicaoTarefa.php
+├── editarTarefa.php
+├── excluirTarefa.php
+├── selecao.php
+├── filtro.php
+├── conexao.php
+├── script.js
+└── assets/
+```
+
+### 📌 Principais Arquivos
+
+| Arquivo | Responsabilidade |
+|----------|----------------|
+| `index.php` | Tela de login |
+| `processaLogin.php` | Validação de usuário e criação de sessão |
+| `tasks.php` | Painel principal de gerenciamento |
+| `adicaoTarefa.php` | Cadastro de tarefas |
+| `editarTarefa.php` | Atualização de tarefas |
+| `excluirTarefa.php` | Remoção de tarefas |
+| `filtro.php` | Filtragem por status |
+| `conexao.php` | Conexão com banco de dados |
+| `script.js` | Interações da interface |
+
+---
+
+## 🗄️ Banco de Dados
+
+O projeto utiliza o banco de dados MySQL `taskmanagement`.
+
+### Tabelas Esperadas
+
+#### `usuarios`
+Responsável pelo armazenamento das credenciais de acesso.
+
+#### `tarefas`
+Responsável pelo gerenciamento das tarefas cadastradas.
+
+### Campos principais da tabela `tarefas`
+
+| Campo | Descrição |
+|-------|------------|
+| `id` | Identificador da tarefa |
+| `usuario_id` | Referência ao usuário |
+| `titulo` | Nome da tarefa |
+| `descricao` | Detalhes da tarefa |
+| `status` | Status da tarefa |
+
+---
+
+## 🚀 Execução do Projeto
+
+### 1️⃣ Clone o repositório
+
+```bash
+git clone <URL_DO_REPOSITORIO>
+```
+
+---
+
+### 2️⃣ Configure o ambiente
+
+- Utilize um servidor local como:
+  - XAMPP
+  - Laragon
+  - WAMP
+
+- Copie a pasta do projeto para o diretório do servidor.
+
+---
+
+### 3️⃣ Configure o banco de dados
+
+- Crie o banco `taskmanagement`
+- Configure as credenciais no arquivo:
+
+```plaintext
+conexao.php
+```
+
+---
+
+### 4️⃣ Execute a aplicação
+
+Acesse no navegador:
+
+```plaintext
+http://localhost/taskmanagement
+```
+
+---
+
+## 📸 Demonstração
+
+> Adicione aqui imagens da aplicação ou um GIF demonstrando o fluxo do sistema.
+
+Exemplo:
+
+```md
+![Tela Principal](./assets/dashboard.png)
+```
+
+---
+
+## 📈 Melhorias Futuras
+
+- Implementação de prioridades nas tarefas  
+- Sistema de notificações  
+- Responsividade aprimorada  
+- Integração com APIs externas  
+- Dashboard com métricas de produtividade  
+
+---
+
+## 👨‍💻 Autor
+
+Yuri Rodrigues Lombardi  
+
+🔗 LinkedIn: https://linkedin.com/in/yuri-rodrigues-lombardi  
+💻 GitHub: https://github.com/yuriRLombardi
