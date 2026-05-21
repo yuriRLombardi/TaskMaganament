@@ -5,6 +5,37 @@ Aplicação web de gerenciamento de tarefas desenvolvida em PHP com integração
 
 ---
 
+## 📸 Demonstração
+
+### 🔑 Tela de Login
+
+![Login](./docs/images/login.png)
+
+---
+
+### 📋 Painel de Tarefas
+
+![Dashboard](./docs/images/dashboard.png)
+
+---
+
+### ➕ Cadastro de Tarefas
+
+![Cadastro](./docs/images/adicionar-tarefa.png)
+---
+
+### 🔍 Filtragem de Tarefas
+
+![Filtro](./docs/images/filtro.png)
+
+---
+
+### 🎥 Demonstração da Aplicação
+
+![Demo](./docs/images/demo.gif)
+
+---
+
 ## 🎯 Objetivo
 
 O projeto foi desenvolvido com foco na aplicação de conceitos de desenvolvimento web full stack, incluindo autenticação, operações CRUD, integração com banco de dados e organização de funcionalidades em aplicações web.
@@ -81,6 +112,7 @@ O sistema utiliza autenticação baseada em sessão para controle de acesso às 
 | `filtro.php` | Filtragem por status |
 | `conexao.php` | Conexão com banco de dados |
 | `script.js` | Interações da interface |
+| `taskmanagement.sql` | Arquivo para criação do Banco de Dados |
 
 ---
 
