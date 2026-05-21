@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07/12/2024 às 18:27
+-- Tempo de geração: 21/05/2026 às 23:41
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -40,9 +40,12 @@ CREATE TABLE `tarefas` (
 --
 
 INSERT INTO `tarefas` (`id`, `usuario_id`, `titulo`, `descricao`, `status`) VALUES
-(1, 1, 'Biologia', 'Trabalho Articulador', 'INCOMPLETA'),
+(1, 1, 'Biologia', 'Tarefa de Biologia', 'COMPLETA'),
 (2, 1, 'Matemática A', 'Lista 3 - Parte 2', 'COMPLETA'),
-(5, 1, 'MDB', 'Trabalho Articulador', 'INCOMPLETA');
+(5, 1, 'MDB', 'Trabalho Articulador', 'COMPLETA'),
+(10, 1, 'Gravação de vídeo', 'Realizar vídeo', 'INCOMPLETA'),
+(11, 1, 'Projeto', 'Criar Projeto', 'INCOMPLETA'),
+(12, 1, 'Arrumar', 'Ajuste projeto', 'INCOMPLETA');
 
 -- --------------------------------------------------------
 
@@ -92,7 +95,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `tarefas`
 --
 ALTER TABLE `tarefas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
