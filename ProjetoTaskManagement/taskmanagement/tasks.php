@@ -106,11 +106,11 @@
                     <form method = "POST" action = "editarTarefa.php">
                         <div class="mb-3">
                             <label for="editTaskName" class="form-label">Nome da Tarefa</label>
-                            <input type="text" class="form-control" id="editTaskName" name="editTaskName" value="Tarefa Exemplo" required>
+                            <input type="text" class="form-control" id="editTaskName" name="editTaskName" required>
                         </div>
                         <div class="mb-3">
                             <label for="editTaskDescription" class="form-label">Descrição</label>
-                            <textarea class="form-control" id="editTaskDescription" name="editTaskDescription" rows="3" required>Descrição da tarefa</textarea>
+                            <textarea class="form-control" id="editTaskDescription" name="editTaskDescription" rows="3" required></textarea>
                         </div>
                         <div class="mb-3">
                             <label for="editTaskStatus" class="form-label">Status</label>

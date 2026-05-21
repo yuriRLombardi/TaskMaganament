@@ -10,7 +10,7 @@
                     <td>'.$valor["descricao"].'</td>
                     <td>'.$valor["status"].'</td>
                     <td>     
-                        <button onclick="pegarIDEdit(this)" class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#editTaskModal" data-idTarefa = "'.$valor["id"].'">Editar</button>
+                        <button onclick="pegarIDEdit(this)" class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#editTaskModal" data-idTarefa = "'.$valor["id"].'" data-titulo="'.$valor["titulo"].'" data-descricao="'.$valor["descricao"].'" data-status="'.$valor["status"].'">Editar</button>
                         <button onclick="pegarIDExcluir(this)" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-idTarefa = "'.$valor["id"].'">Excluir</button>
                     </td>
                 </tr>';
