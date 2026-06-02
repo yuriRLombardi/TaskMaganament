@@ -7,6 +7,12 @@ Aplicação web de gerenciamento de tarefas desenvolvida em PHP com integração
 
 ## 📸 Demonstração
 
+### 🎥 Demonstração da Aplicação
+
+![Demo](./docs/images/demo.gif)
+
+---
+
 ### 🔑 Tela de Login
 
 ![Login](./docs/images/login.png)
@@ -27,12 +33,6 @@ Aplicação web de gerenciamento de tarefas desenvolvida em PHP com integração
 ### 🔍 Filtragem de Tarefas
 
 ![Filtro](./docs/images/filtro.png)
-
----
-
-### 🎥 Demonstração da Aplicação
-
-![Demo](./docs/images/demo.gif)
 
 ---
 
